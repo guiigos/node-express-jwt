@@ -9,9 +9,10 @@ $ npm install
 ### Executar
 ```sh
 $ node server.js
+Ou
+$ npm start
 ```
 
 ## Licença
 Projeto desenvolvido para fins acadêmicos.
 [MIT License](./LICENSE)
-

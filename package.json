@@ -1,6 +1,16 @@
 {
   "name": "node-token",
+  "version": "1.0.0",
+  "description": "JsonWebToken implementação",
+  "author": "Guilherme Alves (www.guiigos.com)",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "token"
+  ],
   "dependencies": {
     "body-parser": "^1.15.0",
     "express-validator": "^3.1.2",
