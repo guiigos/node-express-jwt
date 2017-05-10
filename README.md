@@ -9,7 +9,7 @@ $ npm install
 ### Executar
 ```sh
 $ node server.js
-Ou
+ou
 $ npm start
 ```
 
