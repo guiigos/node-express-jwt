@@ -1,4 +1,4 @@
-# Node Token
+# NodeJs Token
 > Projeto de exemplo da utilização de **autenticação via token** utilizando [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
 
 ### Instalar as dependências
