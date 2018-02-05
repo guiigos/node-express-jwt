@@ -1,24 +1,31 @@
 {
   "name": "node-token",
-  "description": "JsonWebToken implementação",
-  "author": "Guilherme Alves",
-  "homepage": "http://www.guiigos.com",
   "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "description": "Exemplo autenticação utilizando JsonWebToken",
   "keywords": [
+    "authentication",
     "node",
-    "token",
-    "jsonwebtoken"
+    "token"
   ],
+  "homepage": "http://www.guiigos.com",
+  "license": "MIT",
+  "author": {
+    "name": "Guilherme Alves",
+    "email": "guiigos.alves@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon index",
+    "start": "node index"
+  },
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "express-validator": "^3.1.2",
-    "express": "^4.13.4",
-    "jsonwebtoken": "^5.7.0",
-    "mongoose": "^4.4.5",
-    "morgan": "^1.7.0"
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "express-validator": "4.3.0",
+    "jsonwebtoken": "8.1.1",
+    "morgan": "1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.14.11"
   }
 }
