@@ -1,32 +1,32 @@
 # NodeJs Token
-> Projeto de exemplo da utilização de **autenticação via token** utilizando [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
-> - [Utilização](#utiliza%C3%A7%C3%A3o)
->   - [Ambiente](#ambiente)
->   - [Dependências](#depend%C3%AAncias)
->   - [Executar](#executar)
-> - [Licença](#licen%C3%A7a)
+> Sample project of using **token authentication** using [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
+> - [Usage](#usage)
+>   - [Environment](#environment)
+>   - [Dependencies](#dependencies)
+>   - [Run](#run)
+> - [License](#license)
 
-## Utilização
-### Ambiente
-Instalação
+## Usage
+### Environment
+Installation
 ```bash
 $ npm install npm -g
 ```
 
-### Dependências
-Instalar dependências e módulos
+### Dependencies
+Install dependencies and modules
 ```bash
 $ npm install
 ```
 
-### Executar
-Compilar projeto
+### Run
+Compile project
 ```bash
 $ npm start
 $ npm run nodemon
 ```
 
-## Licença
-Projeto desenvolvido para fins acadêmicos.
+## License
+Project developed for academic purposes.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
