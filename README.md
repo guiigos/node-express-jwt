@@ -27,6 +27,7 @@ $ npm install
 After installing the dependencies the application is ready to run.
 ```bash
 $ npm start
+$ npm run apidoc
 $ npm run nodemon
 ```
 
