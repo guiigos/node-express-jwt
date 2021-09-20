@@ -11,12 +11,6 @@
 Example of using token authentication in NodeJs projects. The use of tokens as an additional authentication mechanism has become increasingly common in the marketplace and provides the highest level of security. Authenticated routes in the application can only be accessed using access token.
 
 ## Usage
-### Environment
-Commands to install the development environment.
-```bash
-$ npm install npm -g
-```
-
 ### Dependencies
 Install dependencies and modules.
 ```bash
@@ -27,7 +21,6 @@ $ npm install
 After installing the dependencies the application is ready to run.
 ```bash
 $ npm start
-$ npm run apidoc
 $ npm run nodemon
 ```
 

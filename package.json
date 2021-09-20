@@ -15,7 +15,6 @@
   },
   "main": "index.js",
   "scripts": {
-    "apidoc": "apidoc -e node_modules",
     "nodemon": "nodemon index",
     "start": "node index"
   },
@@ -23,26 +22,13 @@
     "body-parser": "1.19.0",
     "cors": "2.8.5",
     "express": "4.17.1",
-    "express-validator": "6.1.1",
-    "http-status": "1.3.2",
+    "express-validator": "6.12.1",
+    "faker": "5.5.3",
+    "http-status": "1.5.0",
     "jsonwebtoken": "8.5.1",
-    "morgan": "1.9.1"
+    "morgan": "1.10.0"
   },
   "devDependencies": {
-    "apidoc": "0.17.7",
-    "nodemon": "1.19.1"
-  },
-  "apidoc": {
-    "name": "NodeJs Auth JSW",
-    "title": "Documentation",
-    "template": {
-      "forceLanguage": "en",
-      "withCompare": false,
-      "withGenerator": false
-    },
-    "header": {
-      "title": "Readme",
-      "filename": "README.md"
-    }
+    "nodemon": "2.0.12"
   }
 }
