@@ -13,12 +13,14 @@ Example of using token authentication in NodeJs projects. The use of tokens as a
 ## Usage
 ### Dependencies
 Install dependencies and modules.
+
 ```bash
 $ npm install
 ```
 
 ### Run
 After installing the dependencies the application is ready to run.
+
 ```bash
 $ npm start
 $ npm run nodemon
