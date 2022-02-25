@@ -1,4 +1,4 @@
-# NodeJs Token
+# Node Express Token
 > Sample project of using **token authentication** using [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
 > - [Overview](#overview)
 > - [Usage](#usage)
