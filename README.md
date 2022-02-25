@@ -1,14 +1,18 @@
-# Node Express Token
-> Sample project of using **token authentication** using [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
-> - [Overview](#overview)
-> - [Usage](#usage)
->   - [Environment](#environment)
->   - [Dependencies](#dependencies)
->   - [Run](#run)
-> - [License](#license)
-
-## Overview
+# Node Express Token :bug:
 Example of using token authentication in NodeJs projects. The use of tokens as an additional authentication mechanism has become increasingly common in the marketplace and provides the highest level of security. Authenticated routes in the application can only be accessed using access token.
+
+<details>
+  <summary>
+    <strong>:pushpin: Menu</strong>
+  </summary>
+  <br>
+  
+> - [_**Usage**_](#usage)
+>   - [_Dependencies_](#dependencies)
+>   - [_Scripts_](#scripts)
+> - [_**License**_](#license)
+  
+</details>
 
 ## Usage
 ### Dependencies
@@ -18,7 +22,7 @@ Install dependencies and modules.
 $ npm install
 ```
 
-### Run
+### Scripts
 After installing the dependencies the application is ready to run.
 
 ```bash
