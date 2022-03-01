@@ -9,12 +9,11 @@
 # dotenv
 .env
 
-# editor
-.vscode
-
 # build
 dist
-doc
+
+# editor
+.vscode
 
 # yarn
 yarn-debug.log*
@@ -25,6 +24,7 @@ npm-debug.log*
 package-lock.json
 
 # modules
+lib
 node_modules
 
 # macos
@@ -33,3 +33,6 @@ node_modules
 .DS_Store?
 .Trashes
 Thumbs.db
+
+# project
+doc
