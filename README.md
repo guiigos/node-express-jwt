@@ -1,4 +1,4 @@
-# Node Express Token :bug:
+# Node Express JWT :bug:
 Example of using token authentication in NodeJs projects. The use of tokens as an additional authentication mechanism has become increasingly common in the marketplace and provides the highest level of security. Authenticated routes in the application can only be accessed using access token.
 
 <details>
