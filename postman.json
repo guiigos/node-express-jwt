@@ -1,6 +1,5 @@
 {
 	"info": {
-		"_postman_id": "c4039de3-bc33-4566-9aa3-f655b8605bec",
 		"name": "JsonWebToken",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
