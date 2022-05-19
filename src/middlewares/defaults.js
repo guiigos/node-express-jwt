@@ -16,12 +16,12 @@ const paymentRequired = (err, req, res, next) => {
       .status(httpStatus.PAYMENT_REQUIRED)
       .json({
         validation: array({ onlyFirstError: true }),
-      })
+      });
 
     return;
   }
 
-  return next(err);
+  next(err);
 };
 
 const internalServerError = (err, req, res, next) => {

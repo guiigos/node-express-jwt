@@ -17,7 +17,8 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(cors());
 
-app.set('secret', faker.lorem.word());
+app.set('jwt-options', Object.freeze({ expiresIn: '1h' }));
+app.set('jwt-secret', faker.lorem.word());
 app.set('username', faker.internet.email());
 app.set('password', faker.internet.password());
 

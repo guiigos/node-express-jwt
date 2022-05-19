@@ -1,11 +1,11 @@
 {
-  "name": "node-express-token",
+  "name": "node-express-jwt",
   "version": "1.0.0",
   "description": "Example authentication using JsonWebToken",
   "keywords": [
     "authentication",
     "node",
-    "token"
+    "jwt"
   ],
   "homepage": "http://www.guiigos.com",
   "license": "MIT",

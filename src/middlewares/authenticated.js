@@ -18,7 +18,7 @@ const authenticated = (application) => (req, res, next) => {
     }
 
     req.decoded = decoded;
-    next();
+    return next();
   });
 };
 

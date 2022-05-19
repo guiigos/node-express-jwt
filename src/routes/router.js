@@ -4,15 +4,15 @@ const authenticated = require('../middlewares/authenticated');
 
 module.exports = (application) => {
   const a = router();
-  a.get('/opened', handlers.success);
-  a.get('/closeded', authenticated(application), handlers.success);
+  a.get('/open', handlers.success);
+  a.get('/close', authenticated(application), handlers.success);
 
   const b = router();
   b.use(authenticated(application));
-  b.get('/closeded', handlers.success);
+  b.get('/close', handlers.success);
 
   const c = router();
-  c.get('/closeded', handlers.success);
+  c.get('/close', handlers.success);
 
   const root = router();
   root.use('/a', a);

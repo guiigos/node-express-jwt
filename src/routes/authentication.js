@@ -3,45 +3,47 @@ const router = require('express').Router;
 const handlers = require('../helper/handlers');
 const validator = require('../validators/authentication');
 
-const options = Object.freeze({
-  expiresIn: '1h',
-});
+const get = (req, res, next) => {
+  handlers.success(req, res, {
+    username: application.get('username'),
+    password: application.get('password'),
+  });
+};
 
-module.exports = (application) => {
-  const get = (req, res, next) => {
-    handlers.success(req, res, {
-      username: application.get('username'),
-      password: application.get('password'),
-    });
+const post = (req, res, next) => {
+  const {
+    username,
+    password,
+  } = req.body;
+
+  const hasAccess =
+    username != application.get('username') ||
+    password != application.get('password');
+
+  if (hasAccess) {
+    return handlers.unauthorized(req, res);
+  }
+
+  const payload = {
+    username,
+    password,
   };
 
-  const post = (req, res, next) => {
-    const {
-      username,
-      password,
-    } = req.body;
-
-    if (username != application.get('username') ||
-        password != application.get('password')) {
-      return handlers.unauthorized(req, res);
+  const callback = (error, token) => {
+    if (error) {
+      return handlers.error(req, res, error);
     }
 
-    const payload = {
-      username,
-      password,
-    };
-
-    jwt.sign(payload, application.get('secret'), options, (error, token) => {
-      if (error) {
-        return handlers.error(req, res, error);
-      }
-
-      return handlers.success(req, res, { token });
-    });
+    return handlers.success(req, res, { token });
   };
 
+  return jwt.sign(payload, application.get('jwt-secret'), application.get('jwt-options'), callback);
+};
+
+module.exports = (application) => {
   const authenticate = router();
   authenticate.get('/', get);
   authenticate.post('/', validator.post, post);
+
   application.use('/authenticate', authenticate);
 };
