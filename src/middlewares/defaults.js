@@ -1,15 +1,15 @@
-const httpStatus = require('http-status');
+const httpStatus = require("http-status");
 
 const notFound = (req, res, next) => {
   res
     .status(httpStatus.NOT_FOUND)
-    .send('Page not found!');
+    .send("Page not found!");
 
   next();
 };
 
 const paymentRequired = (err, req, res, next) => {
-  if (Object.keys(err).includes('array')) {
+  if (Object.keys(err).includes("array")) {
     const { array } = err;
 
     res
